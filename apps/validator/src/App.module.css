@@ -1,0 +1,22 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  width: 100%;
+  max-width: 1000px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.contentTitleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.contentTitle {
+  font-size: 27px;
+  color: rgb(18, 56, 152);
+}

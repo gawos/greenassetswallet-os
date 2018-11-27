@@ -1,0 +1,35 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+**/node_modules
+**/build
+node_modules
+locale_files
+apps/admin/src/queries
+apps/investor/src/queries
+apps/issuer/src/queries
+apps/validator/src/queries
+# testing
+/coverage
+/locale_files
+
+# production
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+*.log*
+
+.idea
+.idea/
+!.gitkeep
+**/!.gitkeep
+apps/admin/src/queries
+apps/investor/src/queries
+apps/issuer/src/queries
+apps/validator/src/queries

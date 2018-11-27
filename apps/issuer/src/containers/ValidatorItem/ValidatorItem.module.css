@@ -1,0 +1,21 @@
+.link {
+  color: #123898;
+  font-weight: bold;
+}
+
+.link:hover {
+  color: #2e54a6;
+}
+
+.titleValue {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  color: #959eb3;
+  margin-top: 10px;
+}
+
+.value {
+  color: #39435b;
+  font-size: 14px;
+}

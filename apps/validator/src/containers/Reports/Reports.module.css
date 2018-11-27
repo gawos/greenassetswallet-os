@@ -1,0 +1,47 @@
+.status {
+  display: flex;
+  align-items: center;
+}
+
+.primary {
+  color: #123898;
+}
+
+.reportName {
+  color: #39435b;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  background-color: #f5f8fb;
+}
+
+.titleValue {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  color: #959eb3;
+  margin-top: 10px;
+}
+
+.value {
+  color: #39435b;
+  font-size: 14px;
+}
+
+.documentLink {
+  color: #123898;
+}
+
+.link {
+  color: #123898;
+  font-weight: bold;
+}
+
+.link:hover {
+  color: #2e54a6;
+}

@@ -1,0 +1,22 @@
+.index {
+  justify-content: space-between;
+  padding-left: 25px;
+  background-color: rgb(24, 39, 76);
+  padding-bottom: 5px;
+  padding-top: 10px;
+  color: #fff;
+}
+
+.index h1 {
+  color: #fff;
+}
+
+.link {
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #fff;
+  display: inline-block;
+  font-size: 18px;
+
+  border-bottom: 3px solid transparent;
+}

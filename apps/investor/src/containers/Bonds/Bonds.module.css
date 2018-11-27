@@ -1,0 +1,39 @@
+.titleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.title {
+  color: #A2AABC;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.even,
+.odd {
+  color: #39435A;
+}
+
+.even td, .odd td, .table th {
+  border-bottom: none !important;
+}
+
+.even {
+  background-color: #F5F8FB;
+}
+
+.odd {
+  background-color: #EBEEF3;
+}
+
+.link {
+  color: #123898;
+  font-weight: bold;
+}
+
+.link:hover {
+  color: #2e54a6;
+}

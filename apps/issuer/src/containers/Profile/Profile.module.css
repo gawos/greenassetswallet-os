@@ -1,0 +1,77 @@
+.profileTitleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px 20px 0;
+}
+
+.profileTitle {
+  font-size: 28px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  color: #41579c;
+}
+
+.profileBtn {
+  color: #41579c !important;
+  border-color: #41579c !important;
+}
+
+.profileBtn:hover {
+  color: #6276a8 !important;
+  border-color: #6276a8 !important;
+}
+
+.profileContainer,
+.profileContainer a {
+  color: #41579c;
+}
+
+.profileContainer a:hover {
+  color: #6276a8;
+}
+
+.profileLink {
+  font-weight: bold;
+}
+
+.profileImg {
+  padding: 10px;
+}
+
+.profileDescription {
+  padding: 10px;
+  color: #39435a;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.value {
+  font-size: 14px;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+}
+
+.card {
+  margin-bottom: 30px;
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titleName {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 5px;
+  letter-spacing: 1px;
+  color: #959eb3;
+}

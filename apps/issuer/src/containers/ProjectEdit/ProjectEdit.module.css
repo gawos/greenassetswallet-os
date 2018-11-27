@@ -1,0 +1,21 @@
+.btns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.documentationTitle {
+  font-family: Muli;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 23px;
+  font-size: 18px;
+  display: block;
+  color: #959EB3;
+  margin-bottom: 24px;
+}
+
+.documentationTitle i {
+  font-size: 22px;
+  padding-right: 5px;
+}

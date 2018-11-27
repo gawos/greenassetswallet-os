@@ -1,0 +1,316 @@
+#import "./fragments.gql"
+
+mutation pool($name: String!) {
+  pool(name: $name) {
+    ...poolFields
+  }
+}
+
+mutation poolUpdate($tuid: ID, $name: String!) {
+  pool(tuid: $tuid, name: $name) {
+    ...poolFields
+  }
+}
+
+mutation poolLinkProject($tuid: ID!, $projectId: String!) {
+  poolLinkProject(tuid: $tuid, projectId: $projectId) {
+    tuid
+    projects {
+      tuid
+    }
+    bonds {
+      tuid
+    }
+  }
+}
+
+mutation poolLinkBond($tuid: ID!, $bondTuid: String!) {
+  poolLinkBond(tuid: $tuid, bondTuid: $bondTuid) {
+    tuid
+    projects {
+      tuid
+    }
+    bonds {
+      tuid
+    }
+  }
+}
+
+mutation poolUnlinkProject($tuid: ID!, $projectId: String!) {
+  poolUnlinkProject(tuid: $tuid, projectId: $projectId) {
+    tuid
+    projects {
+      tuid
+    }
+    bonds {
+      tuid
+    }
+  }
+}
+
+mutation poolUnlinkBond($tuid: ID!, $bondTuid: String!) {
+  poolUnlinkBond(tuid: $tuid, bondTuid: $bondTuid) {
+    tuid
+    projects {
+      tuid
+    }
+    bonds {
+      tuid
+    }
+  }
+}
+
+mutation bond(
+  $isin: String!
+  $framework: String!
+  $volume: Float!
+  $currency: String!
+  $dateIssue: Float!
+  $dateMaturity: Float!
+) {
+  bond(
+    isin: $isin
+    framework: $framework
+    volume: $volume
+    currency: $currency
+    dateIssue: $dateIssue
+    dateMaturity: $dateMaturity
+  ) {
+    ...bondFields
+  }
+}
+
+mutation bondUpdate(
+  $tuid: ID!
+  $isin: String!
+  $dateIssue: Float!
+  $dateMaturity: Float!
+  $volume: Float!
+  $currency: String! # $interest: Float!
+  $framework: ID!
+  $pool: ID!
+) {
+  bondUpdate(
+    tuid: $tuid
+    isin: $isin
+    dateIssue: $dateIssue
+    dateMaturity: $dateMaturity
+    volume: $volume
+    currency: $currency
+    framework: $framework
+    pool: $pool
+  ) {
+    ...bondFields
+  }
+}
+
+mutation project(
+  $name: String!
+  $framework: String!
+  $amount: Float!
+  $currency: String!
+  $description: String
+  $region: String!
+  $filesListList: [FilesList]!
+) {
+  project(
+    name: $name
+    framework: $framework
+    amount: $amount
+    currency: $currency
+    description: $description
+    region: $region
+    filesListList: $filesListList
+  ) {
+    ...projectFields
+  }
+}
+
+
+mutation projectUpdate(
+  $tuid: ID!
+  $name: String!
+  $description: String!
+  $amount: Float!
+  $currency: String!
+  $region: String!
+  $logo: [JSON]
+  $filesListList: [FilesList]!
+  $filesDelete: [String!]
+  $files: [String!]
+  $framework: ID!
+  $pool: ID!
+) {
+  projectUpdate(
+    tuid: $tuid
+    name: $name
+    description: $description
+    amount: $amount
+    currency: $currency
+    region: $region
+    logo: $logo
+    filesListList: $filesListList
+    filesDelete: $filesDelete
+    files: $files
+    framework: $framework
+    pool: $pool
+  ) {
+    ...projectFields
+  }
+}
+
+mutation framework(
+  $name: String!
+  $description: String
+  $commitments: [JSON!]!
+  $categories: [JSON!]!
+  $goals: [JSON!]!
+  $files: [Upload]!
+) {
+  framework(
+    name: $name
+    description: $description
+    commitments: $commitments
+    goals: $goals
+    categories: $categories
+    files: $files
+  ) {
+    ...frameworkFields
+  }
+}
+
+mutation frameworkUpdate(
+  $tuid: ID!
+  $name: String!
+  $description: String!
+  $commitmentsAdd: [JSON!]!
+  $commitmentsDelete: [JSON!]
+  $commitmentsUpdate: [JSON!]
+  $filesDelete: [String!]
+  $categories: [JSON!]!
+  $goals: [JSON!]!
+  $files: [Upload]!
+  $isEveryProjectRegistered: Boolean
+) {
+  frameworkUpdate(
+    tuid: $tuid
+    name: $name
+    description: $description
+    commitmentsAdd: $commitmentsAdd
+    commitmentsDelete: $commitmentsDelete
+    commitmentsUpdate: $commitmentsUpdate
+    filesDelete: $filesDelete
+    categories: $categories
+    goals: $goals
+    files: $files
+    isEveryProjectRegistered: $isEveryProjectRegistered
+  ) {
+    tuid
+    name
+    description
+    commitments
+    categories
+    goals
+    files
+    isEveryProjectRegistered
+  }
+}
+
+mutation user(
+  $login: String!
+  $password: String!
+  $role: String!
+  $auxData: JSON!
+) {
+  user(login: $login, password: $password, role: $role, auxData: $auxData) {
+    tuid
+    auxData
+  }
+}
+
+mutation userUpdate($tuid: ID!, $auxData: JSON!) {
+  userUpdate(tuid: $tuid, auxData: $auxData) {
+    tuid
+    auxData
+  }
+}
+
+mutation portfolio($name: String!) {
+  portfolio(name: $name) {
+    tuid
+    name
+  }
+}
+
+mutation portfolioUpdate($tuid: ID!, $auxData: JSON!) {
+  portfolioUpdate(tuid: $tuid, auxData: $auxData) {
+    tuid
+    name
+  }
+}
+
+mutation portfolioAddBond($tuid: ID!, $bondTuid: String!, $amount: Float!) {
+  portfolioAddBond(tuid: $tuid, bondTuid: $bondTuid, amount: $amount) {
+    tuid
+    name
+    bonds {
+      amount
+      bond {
+        ...bondFields
+      }
+    }
+  }
+}
+
+mutation portfolioUpdateBond($tuid: ID!, $bondTuid: String!, $amount: Float!) {
+  portfolioUpdateBond(tuid: $tuid, bondTuid: $bondTuid, amount: $amount) {
+    tuid
+    name
+    bonds {
+      amount
+      bond {
+        ...bondFields
+      }
+    }
+  }
+}
+
+mutation portfolioRemoveBond($tuid: ID!, $bondTuid: String!) {
+  portfolioRemoveBond(tuid: $tuid, bondTuid: $bondTuid) {
+    tuid
+    name
+    bonds {
+      amount
+      bond {
+        ...bondFields
+      }
+    }
+  }
+}
+
+mutation report($projectId: ID!, $report: JSON!) {
+  report(projectId: $projectId, report: $report){
+    tuid
+  }
+}
+
+mutation reportUpdate($tuid: ID!, $report: JSON!) {
+  reportUpdate(tuid: $tuid, report: $report)
+}
+
+mutation reportAndCertificationUpdate($reportTuid: ID!, $report: JSON!, $certificationTuid: ID!, $certification: JSON! ) {
+  reportUpdate(tuid: $reportTuid, report: $report)
+  reportCertificaionUpdate(tuid: $certificationTuid, reportTuid: $reportTuid, certification: $certification)
+}
+mutation reportCertification($tuid: ID!, $certification: JSON!) {
+  reportCertification(tuid: $tuid, certification: $certification)
+}
+
+
+mutation reportRemove($tuid: ID!) {
+  reportRemove(tuid: $tuid)
+}
+
+mutation reportCancel($tuid: ID!) {
+  reportCancel(tuid: $tuid)
+}

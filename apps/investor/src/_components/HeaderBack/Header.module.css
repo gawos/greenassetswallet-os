@@ -1,0 +1,23 @@
+.index {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  background-color: rgba(24, 39, 76);
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+
+.navLink {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: inline-block;
+  font-size: 18px;
+  color: rgb(217, 224, 244);
+  border-bottom: 3px solid transparent;
+}
+
+.title {
+  color: rgb(217, 224, 244);
+  margin: 0;
+}

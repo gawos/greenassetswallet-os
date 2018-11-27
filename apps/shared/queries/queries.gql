@@ -1,0 +1,311 @@
+#import "./fragments.gql"
+
+query pools($filter: PoolsFilter) {
+  pools(filter: $filter) {
+    ...poolFields
+  }
+}
+
+query pool($tuid: ID!) {
+  pool(tuid: $tuid) {
+    tuid
+    name
+    projects {
+      tuid
+      name
+      amount
+      currency
+      issuer {
+        tuid
+        name
+      }
+    }
+    bonds {
+      ...bondFields
+    }
+  }
+}
+
+query bonds($filter: BondsFilter) {
+  bonds(filter: $filter) {
+    ...bondFields
+  }
+}
+
+query bond($tuid: ID!) {
+  bond(tuid: $tuid) {
+    ...bondFields
+    issuer {
+      tuid
+      role
+      auxData
+    }
+    framework {
+      ...frameworkFields
+    }
+  }
+}
+
+query projects($filter: ProjectsFilter) {
+  projects(filter: $filter) {
+    ...projectFields
+    issuer {
+      tuid
+      name
+    }
+    framework {
+      ...frameworkFields
+    }
+    bonds {
+      ...bondFields
+    }
+    reports {
+      tuid
+      type
+      state
+      aux
+      indicator
+      reportForm
+      commitment {
+        tuid
+        commitment
+      }
+      certificationSpec
+      certifications
+      validatedBy {
+        tuid
+        auxData
+      }
+    }
+  }
+}
+
+query projectsReport($filter: ProjectsFilter, $reportsFilter: JSON) {
+  projects(filter: $filter) {
+    tuid
+    reports (filter: $reportsFilter ) {
+      tuid
+      certifications
+    }
+  }
+}
+
+query project($tuid: ID!) {
+  project(tuid: $tuid) {
+    ...projectFields
+    issuer {
+      tuid
+    }
+    framework {
+      ...frameworkFields
+    }
+    bonds {
+      ...bondFields
+    }
+    reports {
+      tuid
+      type
+      state
+      aux
+      indicator
+      reportForm
+      commitment {
+        tuid
+        commitment
+      }
+      certificationSpec
+      certifications
+      validatedBy {
+        tuid
+        auxData
+      }
+    }
+  }
+}
+
+query frameworks($filter: FrameworksFilter) {
+  frameworks(filter: $filter) {
+    ...frameworkFields
+  }
+}
+
+query framework($tuid: ID!) {
+  framework(tuid: $tuid) {
+    ...frameworkFields
+  }
+}
+
+query commitment($tuid: ID!) {
+  commitment(tuid: $tuid) {
+    ...commitmentFields
+  }
+}
+
+query reportsMin($filter: ReportsFilter) {
+  reports(filter: $filter) {
+    tuid
+    certifications
+  }
+}
+
+query reports($filter: ReportsFilter) {
+  reports(filter: $filter) {
+    tuid
+    type
+    name
+    indicator
+    state
+    date
+    aux
+    certificationSpec
+    certifications
+    reportForm
+    validatedBy {
+      tuid
+      auxData
+    }
+    commitment {
+      tuid
+      commitment
+    }
+    project {
+      tuid
+      name
+    }
+  }
+}
+
+query report($tuid: ID!) {
+  report(tuid: $tuid) {
+    tuid
+    type
+    name
+    indicator
+    state
+    date
+    aux
+    certificationSpec
+    certifications
+    reportForm
+    validatedBy {
+      tuid
+      auxData
+    }
+    commitment {
+      tuid
+      commitment
+    }
+    project {
+      ...projectFields
+      issuer {
+        tuid
+      }
+      framework {
+        ...frameworkFields
+      }
+      bonds {
+        ...bondFields
+      }
+    }
+  }
+}
+
+query portfolios($filter: JSON) {
+  portfolios(filter: $filter) {
+    tuid
+    name
+    certifications
+    projects {
+      amount
+      project {
+        ...projectFields
+        currency
+      }
+    }
+    bonds {
+      amount
+      bond {
+        ...bondFields
+      }
+    }
+  }
+}
+
+query portfolio($tuid: ID!) {
+  portfolio(tuid: $tuid) {
+    tuid
+    name
+    certifications
+    portfolios
+    projects {
+      amount
+      project {
+        ...projectFields
+        currency
+      }
+    }
+    bonds {
+      amount
+      bond {
+        ...bondFields
+      }
+    }
+  }
+}
+
+query users($filter: JSON) {
+  users(filter: $filter) {
+    tuid
+    name
+    email
+    role
+    auxData
+  }
+}
+
+query user($tuid: ID!) {
+  user(tuid: $tuid) {
+    tuid
+    name
+    email
+    role
+    auxData
+  }
+}
+
+query userMe {
+  userMe {
+    tuid
+    name
+    email
+    role
+    auxData
+  }
+}
+
+query certifications($filter: JSON) {
+  certifications(filter: $filter) {
+    tuid
+    data
+  }
+}
+
+
+query statisticsFramework($framework: ID!, $year: Float ) {
+    statisticsFramework(framework: $framework, year: $year) {
+      reportedYears,
+      projectsCount,
+      emissionAvoidance {
+        value
+        unit
+      },
+      energyConsumption {
+        value
+        unit
+      },
+      energyGenration {
+        value
+        unit
+      }
+    }
+  }

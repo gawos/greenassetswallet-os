@@ -1,0 +1,8 @@
+.link {
+  color: #123898;
+  font-weight: bold;
+}
+
+.link:hover {
+  color: #2e54a6;
+}

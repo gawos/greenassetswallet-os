@@ -1,0 +1,34 @@
+{
+  "private": true,
+  "scripts": {
+    "clean": "lerna clean -f --yes && rm -rf node_modules",
+    "reset": "yarn run clean && yarn",
+    "admin": "cd apps/admin && yarn start",
+    "investor": "cd apps/investor && yarn start",
+    "issuer": "cd apps/issuer && yarn start",
+    "validator": "cd apps/validator && yarn start",
+    "api": "npm start --prefix apis/main",
+    "preinstall": "npm run preinstall --prefix ./apps/admin && npm run preinstall --prefix ./apps/issuer && npm run preinstall --prefix ./apps/validator && npm run preinstall --prefix ./apps/investor"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-transform-async-to-bluebird": "^1.1.1",
+    "eslint": "^5.7.0",
+    "eslint-config-problems": "^1.1.0",
+    "eslint-plugin-no-unused-vars-rest": "^1.0.6",
+    "eslint-plugin-react": "^7.11.1",
+    "lerna": "^3.2.1",
+    "lerna-update-wizard": "^0.8.0",
+    "react-app-rewired": "^1.5.2"
+  },
+  "workspaces": [
+    "apps/*",
+    "apis/*"
+  ],
+  "dependencies": {
+    "bluebird": "^3.5.2",
+    "long-promise": "^0.1.1",
+    "postchain-client": "^0.6.1",
+    "sqlstring": "^2.3.1"
+  }
+}

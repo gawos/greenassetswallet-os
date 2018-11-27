@@ -1,0 +1,16 @@
+.navLink {
+  display: flex;
+  color: #fff;
+  padding: 8px 20px 8px 20px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.navLink,
+.navLink span {
+  color: rgba(170, 200, 170);
+}
+
+.navLink i {
+  margin-right: 10px;
+}

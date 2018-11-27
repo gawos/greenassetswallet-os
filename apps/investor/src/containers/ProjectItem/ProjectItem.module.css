@@ -1,0 +1,104 @@
+.titleHeader {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #959eb3;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #959eb3;
+  display: flex;
+  justify-content: space-between;
+}
+
+.titleValue {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  color: #959eb3;
+  margin-top: 10px;
+}
+
+.value {
+  color: #39435b;
+  font-size: 14px;
+}
+
+.region {
+  padding: 5px;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  color: #39435b;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.file {
+  margin: 5px 0;
+}
+
+.documentLink {
+  color: #123898;
+}
+
+.goal {
+  display: flex;
+  align-items: center;
+  color: #39435b;
+}
+
+.goalImg {
+  min-width: 40px;
+  min-height: 40px;
+  width: 40px;
+  height: 40px;
+}
+
+.goalText {
+  margin: 10px;
+}
+
+.logo {
+  position: relative;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+}
+
+.reportName {
+  color: #39435b;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  background-color: #f5f8fb;
+}
+
+.primary {
+  color: #123898;
+}
+
+.reportDataTitle .ant-form-item-label {
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #959eb3;
+}

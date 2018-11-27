@@ -1,0 +1,43 @@
+.link {
+  color: #123898;
+  font-weight: bold;
+}
+
+.link:hover {
+  color: #6276a8;
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  padding: 5px 10px;
+  width: 100%;
+}
+
+.item .title {
+  width: 80px;
+}
+
+.title {
+  color: #919191;
+  padding-right: 10px;
+}
+
+.value {
+  font-weight: 700;
+  padding-right: 10px;
+}
+
+.item.textarea {
+  display: block;
+}
+
+.item.textarea .value {
+  font-weight: 500;
+}

@@ -1,0 +1,17 @@
+fieldset {
+  position: relative;
+}
+fieldset[disabled]::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: all;
+  background: rgba(255, 255, 255, 0.2);
+}
+[disabled] {
+  pointer-events: none;
+}

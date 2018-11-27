@@ -1,0 +1,10 @@
+.index {
+  background-color: rgba(220, 220, 220, 0.3);
+  margin-top: 50px;
+  padding: 10px 20px 0px 20px;
+}
+
+.logo {
+  max-width: 70%;
+  max-height: 70%;
+}

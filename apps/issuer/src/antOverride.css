@@ -1,0 +1,222 @@
+.ant-form label {
+  line-height: 15px;
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  font-size: 19px;
+  color: #39435b;
+}
+
+.ant-form-item {
+  margin-bottom: 5px;
+}
+
+.ant-layout {
+  min-height: 100%;
+  background-color: #f5f8fb;
+}
+
+.ant-layout-content {
+  overflow: overlay;
+}
+
+.ant-card {
+  font-family: 'Muli', sans-serif;
+}
+
+.ant-card-body {
+  padding: 18px 22px;
+}
+
+table {
+  border: 0;
+  padding: 0 !important;
+}
+
+.ant-table-thead > tr > th {
+  color: #959eb3;
+}
+
+.ant-table-placeholder,
+.ant-table-thead > tr > th {
+  background: transparent;
+}
+
+.ant-table-small
+  > .ant-table-content
+  > .ant-table-header
+  > table
+  > .ant-table-thead
+  > tr
+  > th,
+.ant-table-small
+  > .ant-table-content
+  > .ant-table-body
+  > table
+  > .ant-table-thead
+  > tr
+  > th,
+.ant-table-small
+  > .ant-table-content
+  > .ant-table-scroll
+  > .ant-table-header
+  > table
+  > .ant-table-thead
+  > tr
+  > th,
+.ant-table-small
+  > .ant-table-content
+  > .ant-table-scroll
+  > .ant-table-body
+  > table
+  > .ant-table-thead
+  > tr
+  > th,
+.ant-table-small
+  > .ant-table-content
+  > .ant-table-fixed-left
+  > .ant-table-header
+  > table
+  > .ant-table-thead
+  > tr
+  > th,
+.ant-table-small
+  > .ant-table-content
+  > .ant-table-fixed-right
+  > .ant-table-header
+  > table
+  > .ant-table-thead
+  > tr
+  > th,
+.ant-table-small
+  > .ant-table-content
+  > .ant-table-fixed-left
+  > .ant-table-body-outer
+  > .ant-table-body-inner
+  > table
+  > .ant-table-thead
+  > tr
+  > th,
+.ant-table-small
+  > .ant-table-content
+  > .ant-table-fixed-right
+  > .ant-table-body-outer
+  > .ant-table-body-inner
+  > table
+  > .ant-table-thead
+  > tr
+  > th {
+  background: transparent;
+}
+
+.ant-modal-info-full-width,
+.ant-modal-full-width .ant-modal {
+  width: 90% !important;
+  max-width: 1000px !important;
+}
+
+.ant-btn-background-ghost.ant-btn-primary {
+  color: #123898;
+  border-color: #123898;
+  font-weight: 800;
+}
+
+.ant-btn-background-ghost.ant-btn-primary:hover,
+.ant-btn-background-ghost.ant-btn-primary:focus {
+  color: #2e54a6;
+  border-color: #2e54a6;
+}
+
+.ant-modal-header {
+  border-bottom: none;
+}
+
+.ant-modal-title {
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  font-size: 24px;
+  color: #123898;
+}
+
+.ant-form-item-required:before {
+  display: none;
+}
+
+.ant-form-item-label label:after {
+  display: none;
+}
+
+.ant-form-item-label label.ant-form-item-required:after {
+  display: inline-block;
+  margin-right: 4px;
+  content: "– required";
+  line-height: 1;
+  font-size: 19px;
+  color: #959eb3;
+  padding-left: 4px;
+  font-weight: 400;
+}
+
+.ant-select {
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 16px;
+
+  color: #39435b;
+}
+
+.ant-select-dropdown {
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 16px;
+
+  color: #39435b;
+}
+
+.ant-btn .ant-input .ant-input-number-input {
+  font-family: "Muli";
+}
+
+.ant-upload.ant-upload-drag {
+  background-color: #fff;
+  border-color: #CDD1DD;
+}
+
+.ant-upload.ant-upload-drag p.ant-upload-text {
+  color: #959EB3;
+}
+
+.ant-upload.ant-upload-select-picture-card {
+  width: 250px;
+  height: 204px;
+  background-color: #fff;
+  border-color: #CDD1DD;
+}
+
+.ant-btn-primary {
+  background-color: #123898;
+  border-color: #123898;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.ant-btn-primary:hover, .ant-btn-primary:focus {
+  color: #123898;
+  background-color: #fff;
+  border-color: #123898;
+}
+
+.ant-layout-footer {
+  background-color: #fff;
+}
+
+.ant-layout-sider-children{
+  width: inherit;
+}

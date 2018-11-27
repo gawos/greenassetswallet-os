@@ -1,0 +1,62 @@
+.reportName {
+  color: #163B96;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 10px 20px;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 10px 30px;
+}
+
+.item.textarea {
+  display: block;
+}
+
+.item.textarea .value {
+  font-weight: 500;
+}
+
+.title {
+  color: #99A1B5;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.value {
+  font-size: 16px;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+}
+
+.certification {
+  padding: 15px 20px;
+  border: 1px solid rgba(100, 100, 100, 0.2);
+  background-color: rgba(156, 204, 101, 0.2);
+}
+
+.reportImpoctName {
+  display: flex;
+}
+
+.reportImpoctName div {
+  flex: 1;
+}
+
+.impactReportDate {
+  color: #99A1B5;
+  display: inline-block;
+  margin-left: 50px;
+}

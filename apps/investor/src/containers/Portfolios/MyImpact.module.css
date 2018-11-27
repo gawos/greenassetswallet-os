@@ -1,0 +1,64 @@
+.title {
+  color: #A2AABC;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.card {
+  margin-bottom: 10px;
+}
+
+.cardTitle {
+  color: #39435A;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.cardValue {
+  color: #39435A;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.consumption {
+  margin-bottom: 35px;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.legendIconLine {
+  width: 5px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+.legendValueContainer {}
+
+.legendTitle {
+  color: #959EB2;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.legendValue {
+  color: #39435A;
+  display: flex;
+}
+
+.legendMultipleValue {
+  margin: 0 10px;
+}

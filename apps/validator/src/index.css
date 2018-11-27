@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Muli", sans-serif;
+  height: 100%;
+  background: rgba(241, 242, 227, 0.2);
+}
+#root {
+  height: 100%;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.hoverDetector:hover .showOnHower {
+  visibility: visible;
+}
+
+.showOnHower {
+  visibility: hidden;
+}
+
+fieldset {
+  position: relative;
+}
+fieldset[disabled]::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: all;
+  background: rgba(255, 255, 255, 0.1);
+}
+[disabled] {
+  pointer-events: none;
+}
+
+
+.table-even,
+.table-odd {
+  color: #39435B;
+  font-weight: lighter;
+}
+
+.table-even td, .table-odd td, .table th {
+  border-bottom: none !important;
+}
+
+.table th {
+  padding-top: 0 !important;
+}
+
+.table-even {
+  background-color: #F5F8FB;
+}
+
+.table-odd {
+  background-color: #EBEEF3;
+}
+
+.content-wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header-wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 20px 0;
+}
+
+.empty-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+}
+
+@import "auth.css"

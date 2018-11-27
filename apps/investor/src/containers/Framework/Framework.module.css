@@ -1,0 +1,73 @@
+.frameworkTitleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0 10px;
+}
+
+.frameworkTitle {
+  color: #959eb2;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px;
+  letter-spacing: 1px;
+}
+
+.frameworkContainer,
+.commitmentTitle,
+.commitmentEven,
+.commitmentOdd {
+  color: #39435a;
+}
+
+.commitmentTitle,
+.categoriesTitle,
+.goalsTitle {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.commitmentEven td,
+.commitmentOdd td {
+  border-bottom: none !important;
+}
+
+.commitmentEven {
+  background-color: #f5f8fb;
+}
+
+.commitmentOdd {
+  background-color: #ebeef3;
+}
+
+.filesContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.file {
+  margin-bottom: 10px;
+}
+
+.categoriesTitle,
+.goalsTitle {
+  padding: 16px 0 5px;
+}
+
+.category {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 3px 0;
+}
+
+.goal {
+  display: inline-block;
+  margin: 13px;
+}
+
+.goals {
+  height: 60px;
+  width: 140px;
+}

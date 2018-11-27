@@ -1,0 +1,34 @@
+.container {
+  padding: 15px 20px;
+  border: 1px solid rgba(100, 100, 100, 0.2);
+  background-color: rgba(156, 204, 101, 0.2);
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  color: #39435b;
+}
+
+.titleValue {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  color: #959eb3;
+  margin-top: 10px;
+}
+
+.value {
+  margin-left: 15px;
+  color: #39435b;
+  font-size: 14px;
+}
+
+.link {
+  color: #123898;
+  font-weight: bold;
+}
+
+.link:hover {
+  color: #2e54a6;
+}

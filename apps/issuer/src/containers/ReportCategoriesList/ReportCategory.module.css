@@ -1,0 +1,11 @@
+.title {
+  color: #959EB2;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.reportCard {
+  margin-bottom: 50px;
+}

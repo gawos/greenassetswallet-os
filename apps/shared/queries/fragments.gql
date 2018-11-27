@@ -1,0 +1,71 @@
+fragment poolFields on Pool {
+  tuid
+  name
+  projects {
+    tuid
+  }
+  bonds {
+    tuid
+  }
+}
+
+fragment bondFields on Bond {
+  tuid
+  isin
+  currency
+  volume
+  dateIssue
+  dateMaturity
+  # interest
+  projects {
+    tuid
+  }
+  issuer {
+    tuid
+    role
+    name
+    auxData
+  }
+  poolTuid
+}
+
+fragment frameworkFields on Framework {
+  tuid
+  name
+  description
+  commitments
+  categories
+  goals
+  files
+  isEveryProjectRegistered
+}
+
+fragment projectFields on Project {
+  tuid
+  amount
+  currency
+  name
+  description
+  region
+  logo
+  files
+  poolTuid
+  # bonds {
+  #   tuid
+  # }
+}
+
+fragment reportFields on Report {
+  tuid
+  type
+  indicator
+  certificationSpec
+  certifications
+  validator
+  validatedBy
+  state
+  date
+  aux
+  commitment
+  project
+}

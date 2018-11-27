@@ -1,0 +1,41 @@
+.btn {
+  color: #41579C !important;
+  border-color: #41579C !important;
+  font-weight: bold;
+}
+
+.btn:hover {
+  color: #6276a8 !important;
+  border-color: #6276a8 !important;
+}
+
+.status {
+  font-size: 16px;
+  font-weight: 100;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+
+.viewReport {
+  color: #123898;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 10px 30px;
+}
+
+.title {
+  color: #99A1B5;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.value {
+  font-size: 16px;
+}

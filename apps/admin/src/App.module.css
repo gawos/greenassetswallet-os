@@ -1,0 +1,10 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  max-width: 800px;
+  width: 100%;
+  padding: 0px 20px;
+  align-self: center;
+}

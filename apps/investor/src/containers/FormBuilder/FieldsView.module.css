@@ -1,0 +1,14 @@
+.item {
+  width: 100%;
+}
+
+.itemButton {
+  padding: 0 5px;
+  font-size: 17px;
+}
+
+.reportData {
+  background: #f5f8fb;
+  border-radius: 4px;
+  padding: 25px;
+}

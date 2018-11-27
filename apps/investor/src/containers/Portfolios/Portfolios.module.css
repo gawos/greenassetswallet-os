@@ -1,0 +1,88 @@
+.titleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px 20px 0;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  color: #41579C;
+}
+
+.titleActions {
+  display: flex;
+  align-items: flex-end;
+}
+
+.sectionTitleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.sectionTitle {
+  color: #959EB3;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.card {
+  margin-bottom: 30px;
+}
+
+.cardTitle {
+  color: #A2AABC;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.link {
+  color: #123898;
+  font-weight: bold;
+}
+
+.link:hover {
+  color: #2e54a6;
+}
+
+.even,
+.odd {
+  color: #39435A;
+}
+
+.even td, .odd td, .table th {
+  border-bottom: none !important;
+}
+
+.table th {
+  padding-top: 0 !important;
+}
+
+.even {
+  background-color: #F5F8FB;
+}
+
+.odd {
+  background-color: #EBEEF3;
+}
+
+.titleSelect {
+  color: #959EB3;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.select {
+  width: 200px;
+}

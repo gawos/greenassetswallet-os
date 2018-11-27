@@ -1,0 +1,35 @@
+
+.navLink {
+  display: flex;
+  color: #fff;
+  padding: 8px 20px 8px 20px;
+  border-left: 4px solid transparent;
+}
+.navLinkActive {
+  border-left: 4px solid rgb(37, 215, 124);
+  color: rgb(37, 215, 124);
+}
+
+.navLink i {
+  font-size: 24px;
+  margin-right: 15px;
+}
+
+.logoLink {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.logoLink img {
+  height: 70px;
+}
+
+.userAcionsMenu {
+  position: fixed;
+  width:inherit;
+  bottom: 0;
+  left: 0;
+  margin-top: auto;
+}

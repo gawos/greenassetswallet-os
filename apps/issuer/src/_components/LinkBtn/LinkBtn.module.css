@@ -1,0 +1,13 @@
+.btn {
+  font-weight: bold;
+}
+
+.primary.ghost {
+  color: #41579C !important;
+  border-color: #41579C !important;
+}
+
+.primary:hover.ghost {
+  color: #6276a8 !important;
+  border-color: #6276a8 !important;
+}

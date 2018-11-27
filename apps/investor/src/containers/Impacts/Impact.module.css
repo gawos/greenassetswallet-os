@@ -1,0 +1,75 @@
+.card {
+  background-color: #F5F8FB;
+  margin-bottom: 10px;
+}
+
+.cardTitle {
+  color: #39435A;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.cardValue {
+  color: #39435A;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chartRight {
+  margin-left: auto;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.legendItem {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.legendIconLine {
+  width: 5px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.legendTitle {
+  color: #959EB3;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.legendValue {
+  color: #39435A;
+  font-size: 12px;
+}
+
+.legendMultipleValue {
+  margin: 0 10px;
+}
+
+.goal {
+  display: flex;
+  align-items: center;
+  color: #39435B;
+}
+
+.goalImg {
+  min-width: 40px;
+  min-height: 40px;
+  width: 40px;
+  height: 40px;
+}
+
+.goalText {
+  margin: 10px;
+}
+
+.marketsLegend {
+  margin-top: 10px;
+}

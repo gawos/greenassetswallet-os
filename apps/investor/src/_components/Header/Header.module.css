@@ -1,0 +1,32 @@
+.index {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  background-color: rgba(24, 39, 76);
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+
+_::-webkit-full-page-media,
+_:future,
+:root .index {
+  background-color: rgb(24, 39, 76);
+}
+
+.navLink {
+  display: inline-flex;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 18px;
+  color: rgb(217, 224, 244);
+  border-bottom: 3px solid transparent;
+}
+
+.navLink:hover {
+  color: rgb(37, 215, 124);
+}
+
+.navLinkActive {
+  border-bottom: 3px solid rgb(37, 215, 124);
+}

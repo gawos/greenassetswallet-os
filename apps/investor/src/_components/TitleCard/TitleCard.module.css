@@ -1,0 +1,17 @@
+.titleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  color: #123898;
+}
+
+.actions {
+  display: flex;
+  align-items: flex-end;
+}

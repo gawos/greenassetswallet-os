@@ -1,0 +1,61 @@
+.titleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 30px 5px 15px;
+  letter-spacing: 1px;
+  color: #959EB3;
+}
+
+.card {
+  background-color: #F5F8FB;
+}
+
+.cardTitle {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #39435B;
+}
+
+.cardValue {
+  font-weight: 200;
+  line-height: 49px;
+  font-size: 28px;
+  color: #39435B;
+}
+
+.aggregatedTitleContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aggregatedTitle {
+  margin-bottom: 15px;
+  font-size: 12px;
+  color: #39435B;
+}
+
+.aggregatedDot {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: #123898;
+}
+
+.legendItem {
+  color: #39435B;
+}
+
+.legendTitle {
+  font-weight: bold;
+  font-size: 14px;
+}

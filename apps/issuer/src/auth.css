@@ -1,0 +1,156 @@
+
+.link-btn a {
+    text-align: center;
+    color: #123898;
+    font-weight: 600;
+}
+.link-btn a:hover {
+    text-decoration: underline;
+}
+.link-btn {
+    display: flex;
+    justify-content: center;
+}
+.link-btn.block {
+    width: 100%;
+}
+
+.login-title {
+    margin: 0;
+    font-size: 24px;
+    color: #123898;
+}
+
+.input-label {
+    color: #39435B;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 0px 7px 27px rgba(87, 97, 149, 0.25);
+    margin: 0 auto;
+    max-width: 380px;
+    padding: 0 20px 0 20px;
+}
+
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.logo-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin-right: 30px;
+    justify-content: center;
+}
+
+.logo.with-title {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo-container .logo-group .logo-title,
+.partners-title-container .logo-title {
+    color: #959EB3;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.partners-logo-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.partners-logo-container .logo {
+    margin-right: 20px;
+}
+.logo-container.partners {
+    align-items: center;
+}
+.logo-container.partners .logo-group {
+    margin: 0;
+
+}
+
+@media screen and (max-width: 939px) {
+    .logo-container {
+        justify-content: center;
+    }
+
+    .logo.with-title {
+        height: auto;
+    }
+}
+
+
+.cw-img {
+    width: 120px;
+    height: 60;
+}
+
+.ems-img {
+    width: 115px;
+    height: 49px;
+}
+
+.giz-img {
+    width: 97px;
+    height: 66px;
+}
+
+.fmecd-img {
+    width: 141px;
+    height: 65px;
+}
+
+.cecep-img {
+    width: 151px;
+    height: 27px;
+}
+
+.mistra-img {
+    width: 129px;
+    height: 46px;
+}
+
+.ohman-img {
+    width: 121px;
+    height: 43px;
+}
+
+.vasakronan-img {
+    width: 158px;
+    height: 25px;
+}
+
+.seb-img {
+    width: 96px;
+    height: 43px;
+}
+
+.emdof-img {
+    width: 115px;
+    height: 51px;
+}
+
+.gib-img {
+    width: 89px;
+    height: 62px;
+}
+
+.cicero-img {
+    width: 141px;
+    height: 56px;
+}

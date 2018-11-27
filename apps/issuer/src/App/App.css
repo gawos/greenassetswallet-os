@@ -1,0 +1,12 @@
+.tableNoHeader thead {
+  display: none;
+}
+
+.tableNoColumnsTitle thead {
+  display: none;
+}
+
+.tableNoBorder .ant-table-small,
+.tableNoBorder .ant-table {
+  border: none;
+}
