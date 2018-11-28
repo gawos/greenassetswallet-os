@@ -1,9 +1,9 @@
-#Impact reporting discussion and overview
+# Impact reporting discussion and overview
 
 *Impact* is the measure of value delivered in environmental terms by an entity or undertaken over a defined length of time.
 It encompasses values that can be quantitatively measured and which are more abstract or subjective.
 
-###GAW impact
+### GAW impact
 
 The green assets wallet facilitates the communication of impact metrics between issuer and investor. It does this by:
 
@@ -12,13 +12,13 @@ The green assets wallet facilitates the communication of impact metrics between 
 * Allowing impact metrics to be recorded in a way which is consistent across projects, issuers, and time.
 * Aggregating and presenting relevant impact data to investors
 
-###Scope
+### Scope
 
 There are many ways to measure and express impact.
 This means that creating a generalised model for recording it in a way that supports the above objectives is very challenging.
 For this reason, the scope of the impact data model has been intentionally limited for the first phase of the GAW project.
 
-###Project categories and impact report types
+### Project categories and impact report types
 
 The impact reporting model includes three types of impact report.
 The types of impact report correspond to commonly used *indicators*.
@@ -33,18 +33,17 @@ The three report types correspond to the selected indicator and consist of the f
 
 1. Energy generation
     1. Energy generated in kWh
-    2. Time period
+    2. Year
     3. Document
-2. Energy consumption
-    1. Electricity consumed in kWh
-    2. Heating consumed in kWh
-    3. Cooling consumed in kWh
-    4. Time period
-    5. Document
+2. Energy performance
+    1. Energy consumed in kWh
+    2. Internal floor area in m2
+    3. Year
+    4. Document
 3. Emissions avoidance
     1. Emissions avoided in tonnes/CO2e
     2. Description of methodology, including assumed baseline
-    3. Time period
+    3. Year
     4. Document
 
 Two classes of project have been selected for the initial impact model.
@@ -53,7 +52,7 @@ Two classes of project have been selected for the initial impact model.
     1. Energy generation
     2. Emissions avoidance
 2. Green buildings
-    1. Energy consumption
+    1. Energy performance
     2. Emissions avoidance
 
 ###Reporting process
@@ -69,11 +68,6 @@ Two classes of project have been selected for the initial impact model.
 The GAW aims to store impact data in the least processed form possible so that it can be as durable and useful as possible.
 This means that in order to present relevant data to the investor, a small number of calculations need to be performed.
 The number and complexity of these calculations has been kept to a strict minimum.
-
-**Energy consumption** reports should display the total energy consumption and *ideally* energy performance.
-
-* Total energy consumption (heating + cooling + electricity)
-* Energy performance (total energy consumption / area)
 
 It should be possible in any view which includes multiple reports to display the sum of values from all reports of the same type.
 These views are:
@@ -131,4 +125,4 @@ Impact for that view can then be expressed as *(H/R)I*
 
 **Issues**
 
-*Mixed funding sources*: Some projects are funded by both ìgreenî and ìbrownî investments.
+*Mixed funding sources*: Some projects are funded by both ‚Äúgreen‚Äù and ‚Äúbrown‚Äù investments.
