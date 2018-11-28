@@ -46,10 +46,6 @@ Blockchain is used as a store of facts. There is a simple hierarchy of roles and
 
 "Responsibility", meaning accountability for the quality/accuracy/honesty of the information submitted to the blockchain is devolved (as much as possible) to the issuer user. In reality, they are responsible for handling the money they raise responsibly. It makes sense that they should have a high degree of autonomy. An issuer can input dishonest data, but it will remain there for others to discover which serves as a strong disincentive. Like other blockchains, the GAW aims to make it more rewarding to behave in a good way than in a bad way.
 
-## Terms and ambiguity
-
-The world of finance is quite relationship oriented and unstructured. It relies on a sometimes arcane shared understanding about obscure terms, the difference between which is sometimes unclear to the outsider. For example, there has been much discussion about whether this platform might be extended to encompass i) "social bonds", ii) "sustainability bonds", and iii) "green loans". From the perspective of the GAW, these things are basically identical. They involve a set of obligations, and information about how those obligations are fulfilled in the form of real-world investments. Essentially, there is a lack of distinction between form and content. Just as it is not necessary to know that much about musical genres to design the compact disc, so the GAW aims to abstract away from specific terms where possible to achieve the best general utility. Commitments/Green commitments/Elegibility Criteria/Intended Use of Proceeds; these can all be represented as a list of short paragraphs which contain distinct "promises", it doesn't matter that much what they are called.
-
 ## Roles/objects/actions
 
 ### Admin
