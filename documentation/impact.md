@@ -55,7 +55,7 @@ Two classes of project have been selected for the initial impact model.
     1. Energy performance
     2. Emissions avoidance
 
-###Reporting process
+### Reporting process
 
 1. Impact reports are created only by *issuers*
 2. The issuer navigates to a project page, clicks "new impact report"
@@ -63,7 +63,7 @@ Two classes of project have been selected for the initial impact model.
 4. The issuer provides the required information, plus any additional information
 5. The issuer clicks "commit impact report"
 
-###Calculations
+### Calculations
 
 The GAW aims to store impact data in the least processed form possible so that it can be as durable and useful as possible.
 This means that in order to present relevant data to the investor, a small number of calculations need to be performed.
@@ -77,7 +77,7 @@ These views are:
 * Issuer view has multiple frameworks with multiple projects with multiple reports of different kinds
 * Portfolio view has multiple projects with multiple reports of different kinds
 
-###Portfolio view and pools
+### Portfolio view and pools
 
 Projects *have* impact. Investors *have* impact indirectly because they own bonds, which fund projects.
 Bonds and projects are related to one another by a common *framework*, but this is a very crude association.
