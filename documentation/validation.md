@@ -1,6 +1,6 @@
-#Validation discussion and overview
+# Validation discussion and overview
 
-###Overview
+### Overview
 
 *Validation* is the process of verifying that some commitment made by the issuer of a green bond to its investor has been fulfilled in the "real world". Validation is essentially a three step process.
 
@@ -8,7 +8,7 @@
 2. Issuer makes a concrete commitment to provide some specific evidence which links the abstract commitment to a project instance, and some measurable criteria for success of that project. This step explicitly identifies a project, a commitment from the framework governing that project, the form of the evidence which will later be submitted, and the entity who will provide that evidence -- the "Validator".
 3. The validator provides whatever evidence it is that the issuer specified. This can be text, figures, images, documents, special files. Our structure enables this information to be totally ad-hoc and flexible.
 
-###Commitments
+### Commitments
 
 Within the structure defined by the Green Bond Principles (GBP) GAW commitments will usually relate to statements of intent under the headings "Eligibility Criteria" and "Use of Proceeds". Below is a example 
 
