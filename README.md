@@ -1,12 +1,15 @@
+# Green Assets Wallet
 
-# Setting up postgresql for Postchain
+**See Wiki tab for more information about the project**
+
+### Setting up postgresql for Postchain
 * `sudo -u postgres -i`
 * `createdb postchain`
 * `psql -c “create role postchain LOGIN ENCRYPTED PASSWORD ‘postchain’”`
 * `psql -c “grant ALL ON DATABASE postchain TO postchain”`
 * `exit`
 
-# Setting up gaw-client-apps
+### Setting up gaw-client-apps
 * `git clone git@bitbucket.org:chromawallet/gaw_client_apps.git`
 * Run `lerna bootstrap`
 * In ./apis/main do `npm run prepare-private-database` then `npm run populate-private-database`
